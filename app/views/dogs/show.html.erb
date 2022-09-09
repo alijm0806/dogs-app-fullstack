@@ -1,0 +1,9 @@
+
+  <p><b>Name: </b><%= @dog.name%></p>
+  <p><b>Breed: </b><%= @dog.breed%></p>
+  <p><b>Age: </b><%= @dog.age%></p>
+  <p><b>Image url: </b><%= @dog.image_url%></p>
+  <img src="<%= @dog.image_url %>">
+  
+  <a href="/dogs/<%= @dog.id %>/edit">Edit dog</a>
+  <hr />

@@ -1,0 +1,11 @@
+<h1>edit page</h1>
+
+
+<form action="/dogs/<%= @dog.id %>" method="post">
+  <input name="_method" type="hidden" value="patch" />
+  <p>Breed: <input type="text" name="breed" value="<%= @dog.breed %>">
+  <p>Name: <input type="text" name="name" value="<%= @dog.name %>">
+  <p>Image: <input type="text" name="image_url" value="<%= @dog.image_url %>">
+  <p>age: <input type="text" name="age" value="<%= @dog.age %>">
+  <input type="submit">
+</form>
